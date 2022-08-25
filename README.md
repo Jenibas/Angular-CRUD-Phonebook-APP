@@ -1,6 +1,6 @@
 # AngularCRUD
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
 
 ![Json-server](https://user-images.githubusercontent.com/20453280/186636633-f5253536-4c39-4f86-9ec5-7f206558f585.PNG)
 ![1 Fetch data](https://user-images.githubusercontent.com/20453280/186636737-bfe6545c-e387-4664-a116-9ebaa46f38d0.PNG)
