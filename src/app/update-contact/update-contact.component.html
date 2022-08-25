@@ -1,0 +1,53 @@
+<a class="btn btn-primary btn-lg" routerLink="/">
+  <i class="fa fa-arrow-left"></i> Back</a>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h2>
+            Update Contact
+          </h2>
+        </div>
+        <div class="card-body">
+          <form id="formNewContact" name='formNewContact' #contactData="ngForm" (ngSubmit)="updateContact(contactData.value)">
+            <div class="form-group">
+              <label>Contact ID:</label>
+              <input class="form-control" type="number" name="c_id" id="c_id" placeholder="ID" [(ngModel)]="data.id" ngModel>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+              <label>First Name:</label>
+              <input class="form-control" type="text" name="c_fname" id="c_fname" placeholder="FirstName" [(ngModel)]="data.firstName" ngModel>
+            </div>
+            <br>
+
+            <div class="form-group">
+              <label>Last Name:</label>
+              <input class="form-control" type="text" name="c_lname" id="c_lname" placeholder="LastName" [(ngModel)]="data.lastName" ngModel>
+            </div>
+            <br>
+
+            <div class="form-group">
+              <label>Phone Number:</label>
+              <input class="form-control" type="number" name="c_phone" id="c_phone" placeholder="PhoneNumber" [(ngModel)]="data.phone" ngModel>
+            </div>
+            <br>
+
+            <input class="btn btn-warning text-center" type="submit" value="Update Contact">
+          </form>
+          <h3 class="text-warning" *ngIf="isUpdated">{{confirmationString}}</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+  </div>
+
+</div>
